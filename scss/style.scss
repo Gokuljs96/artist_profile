@@ -27,6 +27,19 @@ nav {
   }
 }
 
+// mobile navbar
+
+.sidenav {
+  background: #21191e;
+  li {
+    a {
+      color: #fff !important;
+      font-family: var(--primary-font);
+      font-size: 16px;
+    }
+  }
+}
+
 .image_container {
   margin-left: -15px !important;
   margin-right: -15px !important;
@@ -46,6 +59,7 @@ nav {
   padding: 13px 0 !important;
   border-top: 1px solid #a8a4a4;
   font-family: var(--primary-font);
+  font-style: italic;
 }
 
 // songs section
@@ -71,7 +85,7 @@ nav {
     height: 80px;
     background: #f44336;
     border-radius: 50%;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
 
@@ -96,12 +110,13 @@ nav {
 
   .card:hover .card-image {
     opacity: 0.8;
-    filter: grayscale(40%);
+    filter: grayscale(60%);
   }
 
   .card-content {
     p {
       font-family: var(--primary-font);
+      font-style: italic;
     }
   }
 }
@@ -111,7 +126,7 @@ nav {
 .page-footer {
   background: #21191e;
   h5 {
-    font-family: var(--primary-font);
+    font-family: var(--secondary-font);
   }
 
   form {
@@ -152,6 +167,12 @@ nav {
 
 .copyright {
   padding: 60px 10px !important;
+
+  a {
+    color: mediumspringgreen;
+    font-family: var(--secondary-font);
+    font-size: 12px;
+  }
 }
 
 // style of social profile bar
@@ -214,5 +235,20 @@ nav {
   .float-yt {
     top: 325px;
     background: #cd201f;
+  }
+}
+
+// Media quries
+@media (max-width: 1279px) {
+  audio {
+    width: 90% !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 599px) and (min-width: 183px) {
+  .playlist_container {
+    margin-left: 0px !important;
+    margin-top: 55px !important;
   }
 }
