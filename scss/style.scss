@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+
+:root {
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Pacifico", cursive;
+}
+
+nav {
+  background: #21191e !important;
+}
+
+.brand-logo {
+  font-family: var(--secondary-font);
+}
+
+#nav-mobile {
+  li {
+    a {
+      font-family: var(--primary-font);
+      text-transform: uppercase !important;
+
+      &:hover {
+        color: mediumspringgreen !important;
+      }
+    }
+  }
+}
+
+.image_container {
+  margin-left: -15px !important;
+  margin-right: -15px !important;
+}
+
+.song_control {
+  width: 100% !important;
+  margin-left: -8px !important;
+}
+
+.playlist_container {
+  margin-left: 80px !important;
+  margin-top: 55px !important;
+}
+
+.collection-item {
+  padding: 13px 0 !important;
+  border-top: 1px solid #a8a4a4;
+  font-family: var(--primary-font);
+}
+
+// songs section
+
+.songs_section {
+  margin-top: 20px !important;
+  padding: 25px 0 !important;
+
+  .section_header {
+    padding-bottom: 20px;
+    font-family: var(--secondary-font);
+    color: crimson;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .card {
+    overflow: hidden;
+  }
+
+  .icon_div {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #f44336;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+
+    i {
+      font-size: 55px !important;
+      color: #fff;
+      padding: 13px;
+    }
+  }
+
+  .card:hover div.icon_div {
+    transform: translate(-50%, -50%) scale(1) !important;
+    transition: all 0.3s ease-out;
+  }
+
+  .card-image {
+    background: #cd201f;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .card:hover .card-image {
+    opacity: 0.8;
+    filter: grayscale(40%);
+  }
+
+  .card-content {
+    p {
+      font-family: var(--primary-font);
+    }
+  }
+}
+
+// footer
+
+.page-footer {
+  background: #21191e;
+  h5 {
+    font-family: var(--primary-font);
+  }
+
+  form {
+    display: flex !important;
+    justify-content: space-between !important;
+    padding: 20px 0 !important;
+  }
+
+  input[type="email"] {
+    border: 2px solid #cd201f;
+    padding: 1px 10px !important;
+    color: #fff;
+    font-family: var(--primary-font);
+    margin-right: -5px;
+  }
+  input[type="email"]:focus {
+    border: 2px solid mediumspringgreen !important;
+  }
+
+  button {
+    margin-top: -7px !important;
+    font-family: var(--secondary-font);
+    border: none !important;
+    outline: none !important;
+    cursor: pointer;
+    background: #cd201f;
+    color: #fff;
+    font-size: 17px;
+  }
+
+  strong {
+    width: 100%;
+    height: 100%;
+    padding: 25px 15px !important;
+    margin-top: 40px !important;
+  }
+}
+
+.copyright {
+  padding: 60px 10px !important;
+}
+
+// style of social profile bar
+
+.social_profile_container {
+  .fl-fl {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 4px;
+    width: 190px;
+    position: fixed;
+    right: -153px;
+    z-index: 1000;
+    font: normal normal 10px Arial;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+
+    a {
+      font-family: var(--primary-font);
+    }
+  }
+
+  i {
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 0;
+    width: 40px;
+    margin-left: 8px;
+  }
+
+  .fl-fl:hover {
+    right: 0;
+  }
+
+  .fl-fl a {
+    color: #fff !important;
+    text-decoration: none;
+    text-align: center;
+    line-height: 43px !important;
+    vertical-align: top !important;
+  }
+
+  .float-fb {
+    top: 160px;
+    background: #3b5999;
+  }
+
+  .float-tw {
+    top: 215px;
+    background: #55acee;
+  }
+  .float-ig {
+    top: 270px;
+    background: #e4405f;
+  }
+
+  .float-yt {
+    top: 325px;
+    background: #cd201f;
+  }
+}
