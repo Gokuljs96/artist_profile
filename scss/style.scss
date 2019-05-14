@@ -67,16 +67,16 @@ audio {
 
 // songs section
 
+.section_header {
+  padding-bottom: 20px;
+  font-family: var(--secondary-font);
+  color: crimson;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
 .songs_section {
   margin-top: 20px !important;
   padding: 25px 0 !important;
-
-  .section_header {
-    padding-bottom: 20px;
-    font-family: var(--secondary-font);
-    color: crimson;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  }
 
   .card {
     overflow: hidden;
@@ -121,6 +121,13 @@ audio {
       font-family: var(--primary-font);
       font-style: italic;
     }
+  }
+}
+
+.video_section {
+  .card-content {
+    font-family: var(--primary-font);
+    font-style: italic;
   }
 }
 
